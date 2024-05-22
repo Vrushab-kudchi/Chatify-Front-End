@@ -7,5 +7,19 @@
 }
 
 .text-input {
-  @apply md:w-[700px] w-[340px] outline-none focus:border-none bg-slate-100 p-4 rounded-2xl hover:bg-slate-200 focus:bg-slate-200;
+  @apply md:w-[700px] w-[340px] outline-none border-none focus:border-none  bg-slate-100 p-4 rounded-2xl hover:bg-slate-200 focus:bg-slate-200;
+}
+
+/* Tooltip styles */
+.tooltip-text {
+  @apply invisible absolute bg-gray-700 text-white text-sm rounded py-1 px-2 z-10 opacity-0 transition-opacity duration-300;
+  @apply top-full left-1/2 transform -translate-x-1/2 mt-2;
+}
+
+.group:hover .tooltip-text {
+  @apply visible opacity-100;
+}
+
+.icon-button {
+  @apply hover:bg-gray-400 p-2 rounded-full;
 }

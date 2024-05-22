@@ -1,9 +1,7 @@
+import AppLayout from "../components/layout/AppLayout";
 
-
-export default function Chat() {
-  return (
-    <div>
-      Chat
-    </div>
-  )
+function Chat() {
+  return <div>Chat</div>;
 }
+
+export default AppLayout()(Chat);

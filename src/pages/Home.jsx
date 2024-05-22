@@ -1,9 +1,11 @@
+import AppLayout from "../components/layout/AppLayout";
+
 function Home() {
   return (
     <>
-      <h1>hey hello there</h1>
+      <h1>Home</h1>
     </>
   );
 }
 
-export default Home;
+export default AppLayout()(Home);
